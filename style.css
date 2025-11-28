@@ -116,13 +116,20 @@ p { margin: 0 0 1rem; color: var(--muted); }
 .hero-content {
   position: relative;
   z-index: 1;
-  padding: 80px 0;
+  padding: 20px;
+  background: rgba(11, 14, 16, 0.4); /* voile sombre translucide */
+  backdrop-filter: blur(6px);         /* effet de flou derrière */
+  border-radius: 50px;                /* arrondi pour un rendu plus doux */
+  display: inline-block;              /* pour que le fond s’adapte au texte */
+  text-align: center;
+  width:fit-content ;
+  height: fit-content;
 }
 .hero h1 {
   font-size: clamp(32px, 5vw, 48px);
 }
 .hero p { font-size: 18px; }
-.hero-actions { margin-top: 18px; display: flex; gap: 12px; }
+.hero-actions { margin-top: 18px; display: flex; gap: 12px; justify-content: center;}
 .btn {
   display: inline-flex;
   align-items: center;
